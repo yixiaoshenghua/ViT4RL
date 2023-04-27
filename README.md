@@ -1,9 +1,10 @@
 # A simple yet work Vision Transformer for Sample Effcient online Reinforcement Learning
 
-This repo is inherited from [CtrlFomer](https://arxiv.org/abs/2206.08883?context=cs.LG) (ICML2022) and is simplified to single task reinforcement learning.
+This repo is inherited from [CtrlFomer](https://arxiv.org/abs/2206.08883?context=cs.LG) (ICML2022) and is simplified to [single task reinforcement learning](https://github.com/YaoMarkMu/ViT4RL).
 
 This is a PyTorch implementation of the contrastive reinforcement framework of **CtrlFomer** in single task reinforcement learning.
 
+And for simplification, we replace the command line inputs from hydra-core to argparse. For logging, we replace wandb with logger class. We fix some bugs in original implementation and add some comments in timm.
 
 ## Requirements
 
