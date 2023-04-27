@@ -1,4 +1,4 @@
-name: drq
+name: rl3
 channels:
   - defaults
 dependencies:
@@ -8,22 +8,24 @@ dependencies:
   - cudatoolkit
   - absl-py
   - pyparsing
-  - jupyterlab
+  - jupyter
   - scikit-image
   - pip:
     - termcolor
-    - git+git://github.com/deepmind/dm_control.git
+    - dm_control
     - git+git://github.com/denisyarats/dmc2gym.git
     - tb-nightly
     - imageio
     - imageio-ffmpeg
-    - git+git://github.com/facebookresearch/hydra@0.11_branch
     - pandas
     - ipdb
     - tqdm
     - torchvision
     - yapf
-    - mujoco_py
-    - sklearn
+    - mujoco_py==2.0.2.8
+    - scikit-learn
     - matplotlib
     - kornia
+    - opencv-python
+    - scikit-video
+    - gym==0.19.0

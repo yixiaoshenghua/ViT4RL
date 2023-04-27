@@ -8,9 +8,9 @@ And for simplification, we replace the command line inputs from hydra-core to ar
 
 ## Requirements
 
-We assume you have access to a gpu that can run CUDA 11.2 and Driver 460.91.03.
+We assume you have access to a gpu that can run CUDA 11.3 and Driver 460.91.03.
 
-python 3.6.13
+python 3.7
 torch  1.9.1
 gcc    9.2
 
@@ -26,24 +26,24 @@ conda env create -f conda_env.yml
 After the instalation ends you can activate your environment with
 ```
 
-conda activate CtrlFormer
+conda activate rl3
 
 ```
 
 
 
-To train the CtrlFormer run
+To train the ViT4RL run
 ```
 
-python3 train.py  batch_size=512 action_repeat=2 env=walker_walk
+bash scripts/run_walker_walk.sh
 
 ```
 
 
-This will produce the `runs` folder, where all the outputs are going to be stored including train/eval logs, tensorboard blobs, and evaluation episode videos. To launch tensorboard run
+This will produce the `log` folder, where all the outputs are going to be stored including train/eval logs, tensorboard blobs, and evaluation episode videos. To launch tensorboard run
 ```
 
-tensorboard --logdir runs
+tensorboard --logdir log
 
 ```
 
